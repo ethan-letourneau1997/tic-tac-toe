@@ -1,0 +1,75 @@
+/* || General Styles || */
+
+*{
+    border: 2px solid;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100vh;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+}
+
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+
+/* || Header || */
+
+.header {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+
+/* || Left || */
+
+.left-side {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+    
+
+/* || Center || */
+
+.center {
+  
+}
+
+    .gameboard {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+        .box {
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          font-size: 170px;
+            
+        }
+
+/* || Right || */
+
+.right-side {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* || Footer || */
+
+.footer {
+    
+}

@@ -15,9 +15,15 @@
     </header>
     <main class="main">
         <section class="left-side">
-            <h2 class="h2">
-                <h2>Player 1</h2>
-            </h2>
+                <h2 id="player1" class="h2">Player 1</h2>
+                <form class="player-form" action="javascript:player.setName1()">
+                    <div class="form-item">
+                        <label for="player1-name">Enter Name</label>
+                        <input type="text" name="name" id="player1-name" placeholder="Jim Bob">
+                    </div>
+                    <button class="player-submit" type="submit">Submit</button>
+                </form>
+                
         </section>
         <section class="middle">
             <div class="gameboard" id="gameboard">
@@ -33,12 +39,21 @@
             </div>
         </section>
         <section class="right-side">
-            <h2 class="h2">
-                <h2>Player 2</h2>
-            </h2>
+            <h2 id="player2" class="h2">Player 2</h2>
+                <form action="javascript:player.setName2()">
+                    <div class="form-item">
+                        <label for="player2-name">Enter Name</label>
+                        <input type="text" name="name"  id="player2-name" placeholder="Jim Bob">
+                    </div>
+                    <button class="player-submit" type="submit">Submit</button>
+                </form> 
         </section>
     </main>
     <footer class="footer">
+        <h1 id="winner"></h1>
+        <button id="reset" class="reset">
+            Reset Game
+        </button>
 
     </footer>
 </body>

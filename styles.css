@@ -14,6 +14,8 @@ body{
     height: 100vh;
     display: grid;
     grid-template-rows: 1fr 5fr 1fr;
+
+    background-color: #457b9d;
 }
 
     .main {
@@ -32,11 +34,45 @@ body{
 
 /* || Left || */
 
-.left-side {
+.left-side, .right-side {
     font-size: 20px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
+
+    .h2 {
+        height: 100px;
+        padding-top: 35px;
+        box-sizing: border-box;
+        text-align: center;
+        justify-content: center;
+        font-size: 40px;
+    }
+    .form-item {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100px;
+        align-items: left;
+        justify-content: center;
+        gap: 10px;
+        padding-left: 92px;
+       
+    }
+        label {
+            display: flex;
+            justify-content: left;
+            font-size: 30px;
+           
+        }
+
+        input {
+            width: 200px;
+            height: 40px;
+            border-radius: 7px
+            
+        }
 
     
 
@@ -51,6 +87,8 @@ body{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
+        border: 6px solid black;
+
     }
         .box {
           display: flex;
@@ -58,8 +96,8 @@ body{
           justify-content: center;
           font-size: 170px;
 
-          border: 2px solid black;
-          background-color: white;
+          border: 4px solid black;
+          background-color: transparent;
           color: black;
         }
 
@@ -68,10 +106,19 @@ body{
             color: white; */
         }
 
+            
+
             .move-button {
                 width: 100%;
-                background-color: rgba(255, 255, 255, 0);
-            
+                background-color: #f1faee;
+               
+            }
+            .move-button:hover {
+                background-color: #a8dadc;
+            }
+
+            .win-button{
+                color: red;
             }
 
             .move-button:focus {
@@ -81,13 +128,30 @@ body{
 /* || Right || */
 
 .right-side {
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
+
 }
 
 /* || Footer || */
 
 .footer {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
+
+
+.player-submit {
+    border: 2px solid black;
+    height: 50px;
+    width: 200px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.reset {
+    height: 90px;
+    width: 150px;
+}
+
+
